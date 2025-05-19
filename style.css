@@ -26,3 +26,6 @@
 .home-hero .chart-img {
     margin-top: 40px;
 }
+
+
+@media (min-width: 1440px){.home-hero{max-width:1400px;margin-inline:auto;}}
