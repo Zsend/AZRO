@@ -160,8 +160,17 @@ transition:none !important;
 </div>
 <div class="hero-image chart-img">
 <picture>
-<source media="(max-width: 900px)" srcset="chart-720.png" type="image/webp"/>
-<picture><source srcset="chart.avif" type="image/avif"><source srcset="chart.webp" type="image/webp"><img alt="XRP Cycle Detector chart illustration" src="chart.png"/></picture>
+  <!-- ▸ Mobile ≤ 899 px -->
+  <source media="(max-width: 899px)" srcset="chart-720.avif" type="image/avif">
+  <source media="(max-width: 899px)" srcset="chart-720.webp" type="image/webp">
+  <source media="(max-width: 899px)" srcset="chart-720.png"  type="image/png">
+
+  <!-- ▸ Desktop ≥ 900 px -->
+  <source media="(min-width: 900px)" srcset="chart.avif" type="image/avif">
+  <source media="(min-width: 900px)" srcset="chart.webp" type="image/webp">
+
+  <!-- Fallback -->
+  <img src="chart.png" alt="XRP Cycle Detector chart illustration">
 </picture>
 <p class="chart-note">
         The Top/Bottom Detector—XRP Module is an educational tool from AZRO Systems™ — not a registered investment adviser. Past performance is not a guarantee of future results; markets evolve and future price action may differ from prior signals.
