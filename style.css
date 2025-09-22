@@ -133,3 +133,22 @@ footer{
 /* About page definition list styling */
 .about-list dt{font-weight:600;margin-block:.75rem .25rem;}
 .about-list dd{margin:0 0 1rem 0;}
+
+
+/* === Home hero: keep centered for stacked layout (<1440px) ===
+   Prevent any left-snap while the hero stacks vertically. */
+@media (max-width: 1439px) {
+  .home-hero {
+    align-items: center !important;
+  }
+  .home-hero .hero-text {
+    left: 0 !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-hero .hero-image {
+    margin-right: 0 !important;
+    align-items: center;
+  }
+}
